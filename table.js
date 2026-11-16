@@ -1,6 +1,6 @@
+//affichage de la table de multiplication de 5
 
-
-
+//solution naive
 console.log("1x5=5")
 console.log("2x5=10")
 console.log("3x5=15")
