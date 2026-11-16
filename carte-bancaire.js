@@ -18,11 +18,11 @@ Algorithme de Luhn
 5.si le total est un multiple de 10, la carte est valide
 */
 
-//lecture
+//lecture du numéro de carte
 let c = 'abcdefgh';
 for (let i = 0; i < c.length; i++) {
     console.log(c.substring(i, i + 1));
-
+//lecture du numéro de carte à l'envers
 }
 for (let i = 7; i >= 0; i--) {
     console.log(c.substring(i, i + 1));
