@@ -27,3 +27,37 @@ for (let i = 0; i < c.length; i++) {
 for (let i = 7; i >= 0; i--) {
     console.log(c.substring(i, i + 1));
 }
+
+const numero = "5555 5515 5555 4444";
+let somme = 0;
+let position = 1;
+for (let i=numero.length-1 ; i>=0; i--) {
+    if ('0123456789'.indexOf(numero.substring(i,i+1)) !== -1){
+        if (position%2===0) {
+            let valeur = 2*parseInt(numero.substring(i,i+1));
+            if (valeur>9) valeur-=9;
+            console.log(i, valeur);
+            somme += valeur;
+        }
+        else {
+            let valeur = parseInt(numero.substring(i,i+1));
+            console.log(i, valeur);
+            somme += valeur;
+        }
+
+        position++;
+    }
+}
+console.log(somme%10===0?"Carte valide": "Carte invalide");
+
+const numero="5555 5555 5555 4444";
+
+for(i=numero.length-1;i>=0;i--){
+    let car = numero.substring(i,i+1);
+    if("0123456789".indexOf(car) !== -1 ) {
+        console.log(car);
+    }
+}
+
+let car = "3";
+console.log("0123456789".indexOf(car));
